@@ -79,7 +79,7 @@ header button {
 	height: 49px;
 	position:absolute;
 	top:64px;
-	right:3px;
+	right:1px;
 	z-index: 2;
 	border-radius: 25px;
 	border: 0;
@@ -281,9 +281,12 @@ h2 {
 	display: inline;
 	padding-top: 8px;
 }
-p {
-  font-size: 10px;
-  padding-bottom: 1px;
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  padding-bottom: 0px;
   padding-top: 0px;
   display: block;
   color: white;
@@ -298,7 +301,7 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  padding: 14px 16px;
+  padding-bottom: 2px;
   margin-top: 8px;
   font-size: 2em;
   
@@ -317,7 +320,7 @@ p {
   color: #cbcdbf;
   border-radius: 20px;
   text-align: center;
-  font-size: 1.9em;
+  font-size: 1.7em;
   text-decoration: none;
 }
 #title1 {
