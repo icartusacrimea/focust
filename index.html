@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Focust</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/general.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+	<audio id="buzzer" src="https://dl.dropboxusercontent.com/s/8aidvobtmia5ls0/Metal%20Gong-SoundBible.com-1270479122.mp3?dl=0" type="audio/mpeg"></audio>
+	</head>
+
+	<body>
+	
+		<header>
+			<div class="w-col w-col-12 logo">
+          		<a href="#"><img class="logo" src="focust.png" alt="focust"></a><p>Focust</p>
+        	</div>
+			<input type="text" placeholder="What would you like to do today?" id="item">
+			<button id="add">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
+			</button>
+			<div id="timer">
+			<a href="#" class="btn" id="goToTimer"> Timer </a>
+			<a href="#" class="btn" id="back"> No Timer </a>
+			</div>
+
+		</header>
+
+		<div class="container">
+			<!-- uncompleted -->
+			<ul class="todo" id="todo"></ul>
+
+			<!-- completed -->
+			<ul class="todo" id="completed"></ul>
+		</div>
+
+		<div id="everything">
+			<div id="timeDiv">
+				<h1 id="title1">Session Time</h1>
+				<a href="#" class="btn" id="minus5Clock">-</a>
+	    		<h2 id="timeType"></h2>
+				<h2 id="num">5</h2>
+				<a href="#" class="btn" id="add5Clock">+</a>
+	    		<a href="#" class="btn" id="reset">Reset</a>
+			</div>
+			<div id="breakDiv">
+				<h1 id="title2">Break Time</h1>
+				<a href="#" class="btn" id="minus5Break">-</a>
+				<h2 id="breakNum">5</h2>
+				<a href="#" class="btn" id="add5Break">+</a>
+			</div>
+			<a href="#" class="btn" id="start"> Start </a>
+		</div>
+
+
+	<script src="js/main.js"></script>
+	<script src="js/main2.js"></script>
+	</body>
+
+</html>
