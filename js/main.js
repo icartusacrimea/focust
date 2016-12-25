@@ -3,6 +3,7 @@
 	// On page load, timer and button to return to list are hidden
 	$( document ).ready(function() {
     	document.getElementById("everything").style.visibility = "hidden";
+    	document.getElementById("shoppingList").style.visibility = "hidden";
     	document.getElementById("back").style.visibility = "hidden";
 	});
 
